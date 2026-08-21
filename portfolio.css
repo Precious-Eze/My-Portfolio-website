@@ -1,0 +1,368 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f5f0;
+  color: #222;
+  font-family: "Source Serif 4", serif;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.site-header {
+  border-bottom: 1px solid #ddd;
+  background-color: #f7f5f0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Logo */
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: #222;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.brand-mark {
+  background-color: #222;
+  color: white;
+
+  padding: 7px 9px;
+  border-radius: 5px;
+
+  font-size: 14px;
+}
+
+.brand-name {
+  font-size: 18px;
+}
+
+
+/* Navigation links */
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #444;
+  text-decoration: none;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 60px;
+}
+
+.hero-copy {
+  max-width: 600px;
+}
+
+
+/* Main heading */
+
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 65px;
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+}
+
+
+/* Hero paragraph */
+
+.hero-lede {
+  font-size: 19px;
+  color: #555;
+}
+
+
+/* Hero buttons */
+
+.hero-actions {
+  margin-top: 30px;
+
+  display: flex;
+  gap: 15px;
+}
+
+
+/* =========================
+   PROFILE PICTURE
+========================= */
+
+.profile-container {
+  width: 350px;
+  height: 350px;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+  border: 5px solid #222;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  display: inline-block;
+
+  padding: 12px 20px;
+
+  text-decoration: none;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+
+  border-radius: 5px;
+}
+
+
+/* Black button */
+
+.btn-primary {
+  background-color: #222;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #444;
+}
+
+
+/* Outline button */
+
+.btn-ghost {
+  border: 1px solid #bbb;
+  color: #222;
+}
+
+.btn-ghost:hover {
+  background-color: #e9e7e2;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+  max-width: 800px;
+  margin: auto;
+
+  padding: 80px 20px;
+
+  border-top: 1px solid #ddd;
+}
+
+
+/* Section headings */
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 38px;
+
+  margin-bottom: 20px;
+}
+
+
+/* Section paragraphs */
+
+.section-lede {
+  font-size: 18px;
+  color: #555;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-list {
+  display: flex;
+  gap: 12px;
+
+  list-style: none;
+
+  margin-top: 25px;
+}
+
+.skill-chip {
+  background-color: #222;
+  color: white;
+
+  padding: 8px 18px;
+
+  border-radius: 20px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.section-contact {
+  padding-bottom: 100px;
+}
+
+.section-contact .btn {
+  margin-top: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.status-bar {
+  border-top: 1px solid #ddd;
+
+  padding: 15px 20px;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+
+  color: #777;
+}
+
+.status-fill {
+  flex: 1;
+}
+
+.status-tag {
+  border: 1px solid #ccc;
+  padding: 3px 7px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  /* Navbar */
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+
+  /* Hero */
+
+  .hero {
+    padding: 70px 20px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .hero-lede {
+    font-size: 17px;
+  }
+
+
+  /* Profile picture */
+
+  .profile-container {
+    width: 280px;
+    height: 280px;
+
+    align-self: center;
+  }
+
+
+  /* Footer */
+
+  .status-bar {
+    flex-wrap: wrap;
+  }
+
+  .status-fill {
+    display: none;
+  }
+}
